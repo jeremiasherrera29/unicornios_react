@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import UnicornsContainer from './unicorns/UnicornsContainer';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/unicornios" element={<UnicornsContainer />} />
+    </Routes>
+  </BrowserRouter>
+);
 
-  return (
-    <div>puta</div>
-  )
-}
-
-export default App
+export default App;
